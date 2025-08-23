@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        .skills-grid-icons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1.5rem; /* Increased gap */
+        }
+        .skill-card-icon {
+            background-color: var(--surface-color);
+            padding: 2rem 1rem;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            color: var(--text-dark);
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .skill-card-icon:hover {
+            transform: translateY(-5px);
+            color: var(--primary-color);
+        }
+        .skill-card-icon i {
+            font-size: 2.5rem;
+        }
+        .skill-card-icon span {
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -16,6 +50,7 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -32,7 +67,7 @@
                 <p class="hero-description">
                     I am a Robotics and Mechatronics Engineering student from the University of Dhaka, passionate about solving complex problems through code and creating intelligent systems.
                 </p>
-                <a href="Chandak_Chakma_CV.pdf" download class="cta-button">Download CV</a>
+                <a href="Chandak_Chakma_CV.pdf" download class="cta-button">Resume</a>
             </div>
         </section>
 
@@ -54,6 +89,21 @@
             </div>
         </section>
         
+        <section id="education" class="container reveal">
+            <h2>Education</h2>
+            <div class="education-item">
+                 <div class="education-logo-container">
+                     <img src="du_logo.png" alt="University of Dhaka Logo" class="education-logo">
+                 </div>
+                 <div class="education-details">
+                     <h3>University of Dhaka</h3>
+                     <p class="degree">B.Sc. in Robotics and Mechatronics Engineering</p>
+                     <p class="date">Sep 2022 - Present</p>
+                
+                 </div>
+            </div>
+  
+        </section>
         <section id="projects" class="container reveal">
             <h2>Selected Projects</h2>
             <div class="projects-grid">
@@ -90,15 +140,19 @@
         
         <section id="skills" class="container reveal">
             <h2>Technical Skills</h2>
-            <div class="skills-list">
-                <p><strong>Programming Languages:</strong> C/C++, Python, JavaScript</p>
-                <p><strong>Core CS:</strong> Data Structures & Algorithms, Object-Oriented Programming, Operating Systems</p>
-                <p><strong>AI & Math:</strong> Machine Learning, Deep Learning, Reinforcement Learning, Linear Algebra</p>
-                <p><strong>Robotics & Tools:</strong> ROS2, Gazebo, Raspberry Pi, OpenCV, Git</p>
-                <p><strong>Hardware:</strong> Soldering, Desoldering, Hardware Integration, Embedded Systems</p>
+            <div class="skills-grid-icons">
+                <div class="skill-card-icon"><i class="fa-brands fa-cuttlefish"></i><span>C++</span></div>
+                <div class="skill-card-icon"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                <div class="skill-card-icon"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                <div class="skill-card-icon"><i class="fa-solid fa-robot"></i><span>ROS/ROS 2</span></div>
+                <div class="skill-card-icon"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
+                <div class="skill-card-icon"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+                <div class="skill-card-icon"><i class="fa-solid fa-brain"></i><span>Machine Learning</span></div>
+
+                <div class="skill-card-icon"><i class="fa-solid fa-microchip"></i><span>Embedded Systems</span></div>
+                <div class="skill-card-icon"><i class="fa-solid fa-camera"></i><span>OpenCV</span></div>
             </div>
         </section>
-        
         <section id="contact" class="container reveal">
             <h2>Connect With Me</h2>
             <p>I am actively seeking Master's program opportunities in the USA and am open to discussing my research and projects.</p>
